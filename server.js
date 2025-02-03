@@ -277,6 +277,7 @@
     updateDeviceStatus("startup");
   });
 
+
   // Allow manual scanning via API (reduces unnecessary automatic scans)
   app.get("/api/scan-devices", async (req, res) => {
     await updateDeviceStatus("manual");
